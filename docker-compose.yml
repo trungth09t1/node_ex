@@ -1,0 +1,10 @@
+version: '2'
+services:
+  omz-docker:
+    build:
+        context: .
+        dockerfile: ./Dockerfile
+    stdin_open: true
+    tty: true
+    ports:
+    - 8778:8080/tcp
